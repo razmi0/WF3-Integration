@@ -1,13 +1,6 @@
 
 # Exercice d'intégration WF3-Integration
 
-## Objectif 
-
-- Mettre en place la structure de mon projet
-- Créer ma convention de nommage
-- Intégrer la maquette de manière responsive
-- Ajouter une page de contact
-
 ## Lien vers la maquette 
 
 [NicePage](https://nicepage.com/html-templates/preview/mobile-app-development-portfolio-346594?device=desktop)
@@ -24,6 +17,8 @@
 - styles
   - [media-queries](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/media-queries.css)
   - [style.css](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/style.css)
+  - [form.css]()
+  - [normalize]()
 - images
   - icones
   - images
