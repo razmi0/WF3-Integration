@@ -265,7 +265,7 @@ el_firstname.addEventListener("blur", () => {
 
 el_lastname.addEventListener("blur", () => {
   isTextValid(el_lastname);
-  if (isInputEmpty(el_firstname)) {
+  if (isInputEmpty(el_lastname)) {
     removeError();
   }
 });
@@ -276,7 +276,7 @@ el_lastname.addEventListener("blur", () => {
 
 el_email.addEventListener("blur", () => {
   isEmailValid(el_email);
-  if (isInputEmpty(el_firstname)) {
+  if (isInputEmpty(el_email)) {
     removeError();
   }
 });
@@ -287,7 +287,7 @@ el_email.addEventListener("blur", () => {
 
 el_textarea.addEventListener("blur", () => {
   isTextValid(el_textarea);
-  if (isInputEmpty(el_firstname)) {
+  if (isInputEmpty(el_textarea)) {
     removeError();
   }
 });
