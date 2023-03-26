@@ -21,7 +21,6 @@
 - scripts
   - [main.js](https://github.com/razmi0/WF3-Integration/blob/master/main.js)
   - [form.js](https://github.com/razmi0/WF3-Integration/blob/master/form.js)
-- assets
 - styles
   - [media-queries](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/media-queries.css)
   - [style.css](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/style.css)
