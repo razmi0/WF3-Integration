@@ -8,6 +8,12 @@
 
 ## Codes
 
-- L'intégtration est propre
 - Pour ton carroussel, il aurai pu être opportun d'éviter de passer par des buttons mais ca fonctionne bien.
 - Tu reverras ta navbar, j'ai un soucis chez moi, je ne la vois pas
+- Attention aux lignes vides
+
+## Intégration
+
+- Attention au formulaire, il n'est pas très lisible, il flotte un peu et le bouton d'envoi fait très cheap
+- Le bouton sur le gros bloc blanc aurai put être un tout petit peu retravaillé pour être mieux intégré
+
