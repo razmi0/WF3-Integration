@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <!-- W3C me deconseille de préciser la balise type ici -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
       defer
     ></script>
-    <script type="text/javascript" src="main.js" defer></script>
-    <script type="text/javascript" src="form.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="/assets/style/style.css" >
-
+    />
+    <script type="text/javascript" src="./scripts/main.js" defer></script>
+    <script type="text/javascript" src="./scripts/form.js" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contact_form.css" />
     <title>Exercice Integration</title>
   </head>
   <body class="bg-custom-black text-light">
     <!-- NAV -->
-
     <header class="bg-body-tertiary">
       <nav class="navbar container-xl bg-body-tertiary">
         <div class="container-fluid px-4 py-2">
@@ -37,11 +36,11 @@
           >
             <!-- (alt="the logo") est mon descriptive text pour la balise <a> -->
             <img
-              src="/assets/img/icones/logo.png"
+              src="/assets/icones/logo.png"
               class="nav-logo"
               alt="the logo"
               title="logo"
-            >
+            />
           </a>
           <button
             class="menu-button bg-body-tertiary"
@@ -52,9 +51,7 @@
         </div>
       </nav>
     </header>
-
     <!-- OFFCANVAS -->
-
     <div
       class="offcanvas offcanvas-custom-width opacity-75 offcanvas-start"
       tabindex="-1"
@@ -74,7 +71,10 @@
         <ul class="list-group-item list-unstyled info-text">
           <li>
             <div class="container-link">
-              <a class="list-group-item my-3 px-2" href="/consigne.html" target="_blank"
+              <a
+                class="list-group-item my-3 px-2"
+                href="/consigne.html"
+                target="_blank"
                 ><span class="offcanvas-emotes"> 📑 </span> Consignes
               </a>
             </div>
@@ -121,92 +121,91 @@
         </ul>
       </div>
     </div>
-
     <!-- MAIN -->
-
     <div class="container">
       <div class="row">
-        <div class="col-md-6 offset-md-3 me-5">
-          <h1 class="mb-5 d-flex justify-content-evenly info-title-font fs-1">
+        <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 me-5 container-form">
+          <h1
+            class="mb-5 d-flex justify-content-evenly info-title-font form-title"
+          >
             Contact the administrator<span class="title-emoji-anim">👇</span>
           </h1>
 
-          <form method="get" novalidate>
+          <form method="get" class="px-sm-4" novalidate>
             <!-- Firstname -->
             <div class="form-group mt-3">
-              <label class="mb-1 info-text-font" for="firstname"
+              <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              class="form-control"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Only alphabetical letters are allowed"
+              required
+              />
+              <label class="mb-1 info-text-font form-title-input" for="firstname"
                 >Firstname</label
               >
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                class="form-control"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-title="Only alphabetical letters are allowed"
-                required
-              >
             </div>
-
             <!-- Lastname -->
             <div class="form-group mt-3">
-              <label class="mb-1 info-text-font" for="lastname">Lastname</label>
               <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                class="form-control"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-title="Only alphabetical letters are allowed"
-                required
-              >
+              type="text"
+              name="lastname"
+              id="lastname"
+              class="form-control"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Only alphabetical letters are allowed"
+              required
+              />
+              <label class="mb-1 info-text-font form-title-input" for="lastname">Lastname</label>
             </div>
 
             <!-- Email -->
             <div class="form-group mt-3">
-              <label class="mb-1 info-text-font" for="email">E-mail</label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-title="Format must be : word@word.word"
-                required
-              >
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Format must be : word@word.word"
+              required
+              />
+              <label class="mb-1 info-text-font form-title-input" for="email">E-mail</label>
             </div>
-
             <!-- Message -->
             <div class="form-group">
-              <label class="mb-1 info-text-font" for="textarea">Comments</label>
               <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="textarea"
-                style="height: 100px"
-                maxlength="300"
-                minlength="10"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-title="Only alphabetical letters are allowed"
+              class="form-control"
+              placeholder="Leave your comment here"
+              id="textarea"
+              style="height: 100px"
+              maxlength="300"
+              minlength="10"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Only alphabetical letters are allowed"
               ></textarea>
+              <!-- <label class="mb-1 info-text-font form-title-input" for="textarea">Comments</label> -->
               <div
                 id="textarea-counter-anchor"
                 class="d-flex justify-content-end"
               ></div>
             </div>
-            <div class="d-flex justify-content-center">
-              <button type="submit" class="btn btn-primary btn-lg">Send</button>
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="">
+                <span>Send</span>
+              </button>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- FOOTER -->
-
     <footer
       class="source-page d-flex flex-column justify-content-around mt-5 px-4 py-5"
     >
