@@ -27,10 +27,10 @@
 
 15 Mo
 
-$ npm install
+`npm install`
 
 ## Run the vite local server in CLI :
 
-$ npx vite
+`npx vite`
 
 Go to your localhost.
