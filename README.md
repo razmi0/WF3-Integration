@@ -17,8 +17,20 @@
 - styles
   - [media-queries](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/media-queries.css)
   - [style.css](https://github.com/razmi0/WF3-Integration/blob/master/assets/style/style.css)
-  - [form.css]()
-  - [normalize]()
+  - [contact_form.css](https://github.com/razmi0/WF3-Integration/blob/master/styles/contact_form.css)
+  - [normalize](https://github.com/razmi0/WF3-Integration/blob/master/styles/normalize.css)
 - images
   - icones
   - images
+
+## Install Vite dependencies :
+
+15 Mo
+
+$ npm install
+
+## Run the vite local server in CLI :
+
+$ npx vite
+
+Go to your localhost.

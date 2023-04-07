@@ -1,0 +1,24 @@
+{
+  "name": "exointegration",
+  "version": "1.0.0",
+  "description": "[NicePage](https://nicepage.com/html-templates/preview/mobile-app-development-portfolio-346594?device=desktop)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razmi0/WF3-Integration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razmi0/WF3-Integration/issues"
+  },
+  "homepage": "https://github.com/razmi0/WF3-Integration#readme",
+  "dependencies": {
+    "vite": "^4.2.1"
+  }
+}
